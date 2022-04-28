@@ -18,6 +18,12 @@
     justify-content: center;
 }
 
-style{
-    font-family: ProximaNova, arial, "Helvetica Neue", sans-serif;
+
+
+.body{ background-color: #F5EBDC;
+font-family: ProximaNova, arial, "Helvetica Neue", sans-serif;
+}
+
+.container{  background-color: #F5EBDC;
+    
 }
