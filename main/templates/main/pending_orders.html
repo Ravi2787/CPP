@@ -14,9 +14,9 @@
                             <th scope="col">User Email</th>
                             <th scope="col">Name</th>
                             <th scope="col">Description</th>
-                            <th scope="col">Specification</th>
+                          
                             <th scope="col">Price</th>
-                            <th scope="col">Total Pieces</th>
+                       
                             <th scope="col">Status</th>
                             <th scope="col">Change Status</th>
                         </tr>
@@ -29,9 +29,9 @@
                             <td>{{ item.user.email}}</td>
                             <td>{{ item.item.title }} <span class="badge badge-{{ item.item.label_colour }}">{{ item.item.labels }}</span></td>
                             <td>{{ item.item.description }}</td>
-                            <td>{{ item.item.instructions }}</td>
+                     
                             <td>{{ item.item.price }}</td>
-                            <td>{{ item.item.pieces }} pieces</td>
+                       
                             <td>{{ item.status }}</td>
                             <td>
                                 <form method="POST" action="{% url 'main:update_status' item.id %}" style="display: flex;">

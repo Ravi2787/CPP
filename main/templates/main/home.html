@@ -8,9 +8,9 @@
       <div class="row"  >
         {% for item in menu_items %}
             <div class="col-sm-4">
-                <div class="card mb-3" style="height: fit-content; overflow: auto;">
-                  <img src="{{ item.image.url }}" style="height: 170; width: 255;">
-                    <div class="card-body text-center">      
+                <div class="card mb-3" style="height: fit-content; overflow: auto; border:0;">
+                  <img src="{{ item.image.url }}" style="height: 170; width: 255;background-color: #F5EBDC ">
+                    <div class="card-body text-center" style="background-color: #F5EBDC" >      
                             
                       <h5 class="text-left"><a href="{% url 'main:dishes' item.slug %}">{{ item.title }} </a><span class="badge badge-{{ item.label_colour }}">{{ item.labels }}</span></h5>
                      
